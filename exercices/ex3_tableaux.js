@@ -1,4 +1,3 @@
-
 let notes = [12, 8, 15, 10, 7];
 
 let somme = 0;
