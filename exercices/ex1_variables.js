@@ -1,9 +1,7 @@
-function infosEtudiant(nom, note){
-    if (note >= 10){
-        return nom + ":" + note + "/20 Admis";
-    } 
-    else {
-        return nom + ":" + note + "/20 Ajourné";
+function infosEtudiant(nom, note) {
+    function resultat(note){
+       return (note >= 10) ? "Admis" : "Ajourné";  // ← return est essentiel !
     }
+    return nom + " : " + note + "/20 → " + resultat(note);
 }
 console.log(infosEtudiant("Hiba",20))
